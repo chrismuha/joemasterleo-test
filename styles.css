@@ -30,11 +30,14 @@ a {
 /* header */
 
 header {
-    background: linear-gradient(to right, #aedfff, white, #ffd6cc);
+    /* background: linear-gradient(to right, #aedfff, white, #ffd6cc); */
+    background: linear-gradient(to right, #aedfff, rgb(211, 227, 247), #ffd6cc);
     /* min-height: 80vh; */
     border-bottom: var(--main-color) 2px solid;
     padding: 24pt 0;
     margin: 32px 0;
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
 }
 
 header:nth-child(1) {
@@ -73,7 +76,7 @@ header img {
 header video {
     width: 270px;
     position: relative;
-    padding-top: 6pt;
+    padding-top: 12pt;
     padding-bottom: 0pt;
 }
 @media screen and (max-width: 450px) {
@@ -110,7 +113,11 @@ header .header-links a:first-child {
 .intro-header {
     margin: 24pt 0;
 }
-
+@media screen and (max-width: 425px) {
+    .intro-header, .book-reviews h1 {
+        font-size: 33pt;
+    }
+}
 .top-text, .intro-text, .bulleted-section, .box-text {
     border:solid 12pt #1F5B65;
     padding: 1rem;
@@ -123,13 +130,16 @@ header .header-links a:first-child {
 .top-list-wrap {
     /* display: flex;
     align-items: flex-start; */
+    background: white;
     justify-content: center;
 }
 .top-six-bullets {
-    background: white;
+    padding-top: 12pt;
+    padding-right: 12pt;
 }
 .next-bullets {
     background-color: white;
+    padding-right: 12pt;
 }
 .header-image {
     float: left;
@@ -195,6 +205,7 @@ header .header-links a:first-child {
     }
     .top-six-bullets > div:nth-child(1) {
         padding: 0;
+        padding-left: 1rem;
     }
 }
 .seeMore, .seeLess, .seeMoreReview, .seeLessReview, .seeMoreStyle {
@@ -393,14 +404,14 @@ header .header-links a:first-child {
 /* biography section */
 
 #biography {
-    background: linear-gradient(to right, #aedfff, white, #ffd6cc) !important;
+    background: linear-gradient(to right, #aedfff, white, #ffd6cc);
     /* background: #4681ffc2; */
 	background-size: 400% 400%;
-	/* animation: gradient 10s ease infinite; */
+	animation: gradient 5s ease infinite;
 	text-align: left;
 }
 
-/* @keyframes gradient {
+@keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -410,7 +421,7 @@ header .header-links a:first-child {
     100% {
         background-position: 0% 50%;
     }
-} */
+}
 /* custom sections */
 
 .custom-section-1 {
@@ -517,12 +528,11 @@ footer {
     overflow-x: hidden;
 }
 footer img {
-    height: 513.50px;
+    height: 462.15px;
     overflow-x: hidden;
 }
 footer img:nth-child(2) {
-    height: 240px !important;
-    height: auto;
+    height: 120px;
 }
 footer a {
     color: white;
@@ -544,7 +554,7 @@ footer a:hover {
 @media screen and (max-width: 475px) {
     footer img {
         height: unset;
-        max-width: 600px;
+        max-width: 540px;
     }
 }
 @media screen and (max-width: 977px) {
