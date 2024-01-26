@@ -42,6 +42,7 @@ header {
 
 header:nth-child(1) {
     margin-top: 0;
+    padding-top: 0;
 }
 
 header h1 {
@@ -76,7 +77,7 @@ header img {
 header video {
     width: 270px;
     position: relative;
-    padding-top: 12pt;
+    padding-top: 7pt;
     padding-bottom: 0pt;
 }
 @media screen and (max-width: 450px) {
@@ -160,7 +161,7 @@ header .header-links a:first-child {
 }
 .bulleted-section, .link-below-bio {
     margin: auto;
-    padding: 24pt;
+    padding: 30pt;
 }
 .bulleted-section b {
     font-size: 22pt;
@@ -196,16 +197,19 @@ header .header-links a:first-child {
     display: block;
     padding-left: 300px;
     padding-right: 6pt;
+    padding-top: 14pt;
 }
 @media screen and (max-width: 565px) {
     .header-image {
         margin: auto;
         float:initial;
         width: 95%;
+        margin-bottom: 1rem;
     }
     .top-six-bullets > div:nth-child(1) {
         padding: 0;
-        padding-left: 1rem;
+        padding-left: 12pt;
+        padding-top: 0;
     }
 }
 .seeMore, .seeLess, .seeMoreReview, .seeLessReview, .seeMoreStyle {
@@ -566,6 +570,9 @@ footer a:hover {
     }
     .top-text, .intro-text, .bulleted-section, .box-text, .custom-section-1, .video-container {
         width: 95%;
+    }
+    .bulleted-section {
+        width: 100%;
     }
 }
     
