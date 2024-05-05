@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 
 /* default/primary codes */
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
