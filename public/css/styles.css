@@ -64,7 +64,7 @@ header h1 {
     text-align: center;
 }
 
-header h2{
+header h2 {
     text-align: center;
     font-weight: 500;
 }
@@ -78,7 +78,7 @@ header h2{
     flex-wrap: wrap;
 }
 
-.box-wrapper{
+.box-wrapper {
     padding: 0rem;
     text-align: left;
     margin: auto;
@@ -109,6 +109,7 @@ header video {
         width: 95vw;
     } */
 }
+
 .header-image {
     float: left;
     padding-left: 1rem;
@@ -161,6 +162,7 @@ header .header-links a:first-child {
 .intro-header {
     margin: 24pt 0;
 }
+
 @media screen and (max-width: 425px) {
     .intro-header, .book-reviews h1 {
         font-size: 33pt;
@@ -290,7 +292,7 @@ header .header-links a:first-child {
     width: 100%;
     height: 100%;
     border: #1f5b65 12pt solid;
-}
+  }
 
 /* iframe {
     position: absolute;
@@ -317,6 +319,7 @@ header .header-links a:first-child {
         width: 40rem;
         padding-bottom: 23rem;
     }
+
     iframe {
         width: 40rem;
         height: 23rem;
@@ -513,8 +516,7 @@ header .header-links a:first-child {
     display: flex;
     flex-direction: column;
     gap: 12pt;
-    color: #000000;
-    
+    color: #000000; 
 }
 
 .custom-section-1 p {
@@ -701,7 +703,7 @@ footer a:hover {
 .review-slider .swiper-slide {
     padding: 0 60pt;
     text-align: left;
-}
+} 
 
 .review-slider img {
     width: 100%;
